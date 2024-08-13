@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- 현재 파일이 XML 파일이기 때문에 맨 위에 XML 선언이 온다 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/schema/mybatis-3-mapper.dtd"> <!-- 규칙을 정의한 DTD 선언 -->
+
+
+<mapper namespace="com.bitstudy.app.dao.articleMapper">
+
+<!--    인설트 -->
+    <insert id="insertArticle" parameterType="ArticleDto">
+        insert into article values (null,#{a_writer},#{a_content},#{a_title},#{a_cate},now())
+    </insert>
+
+<!--딜리트 all-->
+    <delete id="deleteArticleAll" >
+        truncate article
+    </delete>
+
+<!--    딜리트(작성자 기준 다삭제)-->
+    <delete id="deleteArticleWriter" parameterType="String">
+        delete from article
+        where a_writer=#{a_writer}
+    </delete>
+
+    <delete id="deleteArticleCate" parameterType="map">
+        delete from article
+        where a_writer=#{a_writer} and a_cate=#{a_cate}
+    </delete>
+
+
+    <!--딜리트(하나 삭제)-->
+    <delete id="deleteArticleOne" parameterType="map">
+        delete from article
+        where a_seqno = #{a_seqno} and a_writer= #{a_writer}
+    </delete>
+
+
+
+<!--    업데이트-->
+    <update id="updateArticle" parameterType="ArticleDto">
+        update article set a_content = #{a_content} , a_title = #{a_title}
+        where a_seqno = #{a_seqno} and a_writer=#{a_writer}
+    </update>
+
+
+<!--셀렉트(유저로  찾기) 전체찾기-->
+    <select id="selectArticle" parameterType="map" resultType="ArticleDto">
+        select * from article
+        where a_writer=#{a_writer}
+        order by a_seqno desc
+        limit #{page},10
+    </select>
+
+
+<!--셀렉트(카테,유저로 찾기)-->
+    <select id="selectArticleCate" parameterType="map" resultType="ArticleDto">
+        select * from article
+        where a_cate = #{a_cate} and a_writer=#{a_writer}
+        order by a_seqno desc
+        limit #{page},10
+    </select>
+
+
+<!--    셀렉트 (고유번호로 하나 찾기)-->
+    <select id="selectArticleOne" parameterType="int" resultType="ArticleDto">
+        select * from article
+        where a_seqno = #{a_seqno}
+    </select>
+
+<!--그 유저가 작성한 게시글 갯수가 몇개인지 -->
+    <select id="selectTotalCount" parameterType="String" resultType="int">
+        select count(*) from article
+        where a_writer = #{a_writer}
+    </select>
+
+
+<!--그 유저가 작성한 어떤 카테고리의 게시글 몇 개인지-->
+    <select id="selectCateCount" parameterType="map" resultType="int">
+        select count(*) from article
+        where a_cate = #{a_cate} and a_writer = #{a_writer}
+    </select>
+
+
+</mapper>

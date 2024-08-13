@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- 현재 파일이 XML 파일이기 때문에 맨 위에 XML 선언이 온다 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/schema/mybatis-3-mapper.dtd"> <!-- 규칙을 정의한 DTD 선언 -->
+
+
+<mapper namespace="com.bitstudy.app.dao.userMapper">
+
+
+<!-- 유저 인설트 ㅋ-->
+    <insert id="insertUser" parameterType="UserDto">
+        insert into user values(null,#{u_id},#{u_pw},#{u_name},#{u_number})
+    </insert>
+
+
+<!--    유저 딜리트 ㅋ-->
+    <delete id="deleteUser" parameterType="String">
+        delete from user
+        where u_id = #{u_id}
+    </delete>
+
+
+<!--셀렉트 유저 정보찾기 -->
+<select id="selectUser" parameterType="String" resultType="UserDto">
+    select * from user
+    where u_id = #{u_id}
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/show.js"></script>
+    <script src="./js/h_f.js"></script>
+
+    <link rel="stylesheet" href="./css/h_f.css">
+    <link rel="stylesheet" href="./css/show.css">
+    
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo"><a href="#">My_development_story</a></div>
+            <div class="login_box">
+                <div class="login_id">나상민 님</div> <!--  있다 없다  -->
+                <div class="login_text"><a href="#">log-in</a></div> <!-- 로그인,로그아웃  -->
+                <div class="unregister">회원 탈퇴</div> <!-- 회원 가입, 회원 탈퇴 -->
+            </div>
+            <div class="header_ham">
+                <div class="ham_line"></div>
+                <div class="ham_line"></div>
+                <div class="ham_line"></div>
+            </div>
+            <div class="ham_pan">
+                <div class="ham_top">
+                    <div class="ham_logo"><a href="#">My_development_story</a></div>
+                    <div class="close">닫기</div>
+                </div>
+                <div class="ham_bot">
+                    <div class="ham_login_text"><a href="#">log-in</a></div> <!-- 로그인,로그아웃  -->
+                    <div class="ham_unregister">회원 탈퇴</div> <!-- 회원 가입, 회원 탈퇴 -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container_area">
+                <form action="" method="get">
+                    <div class="title_box">
+                        <div class="content_seqno" style="display: none"></div>  <!--  고유 번호 넣기  -->
+                        <div class="title_cate" style="display: inline-block">독서</div>
+                        <select name="cate" class="select_cate" style="display: inline-block">
+                            <option value="" disabled hidden selected>목록</option>
+                            <option value="독서">독서</option>
+                            <option value="독서">독서</option>
+                            <option value="독서">독서</option>
+                            <option value="독서">독서</option>
+                            <option value="독서">독서</option>
+                            <option value="독서">독서</option>
+                        </select>
+                        <div class="title_time">24.06.27</div>  <!--  이건 날짜(24.06.27) 찍기 변경해 와야함 -->
+                        <input type="text" class="title_name" name="title_name" readonly value="항상 발전하고 꿈꾸는 나에게 ">
+                    </div>
+                    <div class="content_box">
+                        <textarea name="content" id="content" readonly></textarea>
+                    </div>
+                    <div class="button_box">
+                        <button class="button_register">등록하기</button>
+                        <button class="button_modify">수정하기</button>
+                        <div class="button_delete"><a href="">삭제하기</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+
+    //     $(".cate_title").on('click',function(){
+    //     $('.cate_popup_pan').css({
+    //         display: "block"
+    //     })
+    //     $('.popup_title').val("")
+    // })
+
+
+    })
+</script>
+
+</html>

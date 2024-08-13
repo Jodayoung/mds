@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- 현재 파일이 XML 파일이기 때문에 맨 위에 XML 선언이 온다 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/schema/mybatis-3-mapper.dtd"> <!-- 규칙을 정의한 DTD 선언 -->
+
+
+<mapper namespace="com.bitstudy.app.dao.imgMapper">
+<!--    인설트-->
+    <insert id="insertImg" parameterType="imgDto">
+        insert into img values(null,#{fk_a_seqno},#{i_link})
+    </insert>
+
+<!--    딜리트(작성자 기준 다삭제) - 이건 맵퍼말고 서비스에서 포이치 돌리자-->
+    <!--    딜리트(작성자 + 카테 기준 다삭제) - 이것도 위랑 동일-->
+    <!--    딜리트(게시글 번호로 하나삭제)-->
+    <delete id="deleteImgOne" parameterType="int">
+        delete from img
+        where fk_a_seqno = #{fk_a_seqno}
+    </delete>
+
+
+<!--    업데이트-->
+    <update id="updateImg" parameterType="imgDto">
+        update img i_link = #{i_link}
+        where i_seqno = #{i_seqno}
+    </update>
+
+<!--    셀렉트(게시글 하나에있는거 리스트로 들고오기)-->
+    <select id="selecetImg" parameterType="int" resultType="imgDto">
+        select * from img
+        where fk_a_seqno = #{fk_a_seqno}
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

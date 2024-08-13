@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.header{
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 2px rgb(107, 107, 107)
+}
+
+.login_box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.login_box>div{
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 2px rgb(107, 107, 107);
+    font-weight: 500;
+}
+
+.header_ham{
+    display: none;
+
+    width: 55px;
+    height: 50px;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    margin-right: 10px;
+}
+
+.ham_line{
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+}
+
+
+.ham_pan{
+    position: fixed;
+    left: -100%;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #fff;
+    z-index: 10;
+    transition: all 0.5s;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+.ham_top{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.ham_logo{
+    font-size: 19px;
+    font-weight: 550;
+}
+.close{
+    cursor: pointer;
+}
+
+.ham_bot{
+    width: 100%;
+}   
+
+.ham_login_text,.ham_unregister{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 19px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+
+}
+.ham_login_text>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.unregister{
+    cursor: pointer;
+}

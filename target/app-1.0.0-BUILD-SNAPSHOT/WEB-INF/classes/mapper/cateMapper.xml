@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>  <!-- 현재 파일이 XML 파일이기 때문에 맨 위에 XML 선언이 온다 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/schema/mybatis-3-mapper.dtd"> <!-- 규칙을 정의한 DTD 선언 -->
+
+
+<mapper namespace="com.bitstudy.app.dao.cateMapper">
+
+<!--    인설트-->
+    <insert id="insertCate" parameterType="CateDto">
+        insert into cate values(null,#{c_writer},#{c_content})
+    </insert>
+
+<!--    딜리트(작성자기준 다삭제)-->
+    <delete id="deleteCateWriter" parameterType="String">
+        delete from cate
+        where c_writer = #{c_writer}
+    </delete>
+
+<!--    딜리트(하나 삭제)-->
+    <delete id="deleteCateOne" parameterType="int">
+        delete from cate
+        where c_seqno = #{c_seqno}
+    </delete>
+
+<!--    업데이트-->
+    <update id="updateCate" parameterType="CateDto">
+        update cate set c_content = #{c_content}
+        where c_seqno = #{c_seqno}
+    </update>
+
+<!--    셀렉트(유저로 찾아오기)-->
+    <select id="selectCate" parameterType="String" resultType="CateDto">
+        select * from cate
+        where c_writer = #{c_writer}
+    </select>
+
+
+    <!--    셀렉트(고유 번호로 이름 찾아오기)-->
+    <select id="selectCateOne" parameterType="int" resultType="String">
+        select c_content from cate
+        where c_seqno = #{c_seqno}
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>

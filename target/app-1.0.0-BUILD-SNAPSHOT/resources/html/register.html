@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/register.js"></script>
+
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div id="wrap" class="contents_area">
+        <div class="main">
+            <div class="logo"><a href="#">My_development_story</a></div>
+            <div id="error"></div>
+            <form action="" method="post" class="form" onsubmit="return register_check()">
+                <input type="text" placeholder="아이디" class="id" id="id" name="id">
+                <input type="password" placeholder="비밀번호" class="pw" id="pw" name="pw">
+                <input type="password" placeholder="비밀번호확인" class="pw_chk" id="pw_chk" >
+                <input type="text" placeholder="성명" class="name" name="name" id="name">
+                <input type="text" placeholder="전화번호(숫자만 입력)" class="pone" name="pone" id="pone">
+                <button class="register">회원가입</button>
+                </form>
+            <div class="login">계정이 있으신가요? <span><a href="#">로그인</a></span></div>
+
+        </div>
+
+    </div>
+</body>
+</html>

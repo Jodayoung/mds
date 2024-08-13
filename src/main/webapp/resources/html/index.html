@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/h_f.js"></script>
+
+    <link rel="stylesheet" href="./css/h_f.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="../js/index.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo"><a href="#">My_development_story</a></div>
+            <div class="login_box">
+                <div class="login_id">나상민 님</div> <!--  있다 없다  -->
+                <div class="login_text"><a href="#">log-in</a></div> <!-- 로그인,로그아웃  -->
+                <div class="unregister">회원 탈퇴</div> <!-- 회원 가입, 회원 탈퇴 -->
+            </div>
+            <div class="header_ham">
+                <div class="ham_line"></div>
+                <div class="ham_line"></div>
+                <div class="ham_line"></div>
+            </div>
+            <div class="ham_pan">
+                <div class="ham_top">
+                    <div class="ham_logo"><a href="#">My_development_story</a></div>
+                    <div class="close">닫기</div>
+                </div>
+                <div class="ham_bot">
+                    <div class="ham_login_text"><a href="#">log-in</a></div> <!-- 로그인,로그아웃  -->
+                    <div class="ham_unregister">회원 탈퇴</div> <!-- 회원 가입, 회원 탈퇴 -->
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="container_area">
+                <div class="title">당신의 발전을 스토리로 만들어 주세요.</div>
+                <div class="main">
+                    <div class="cate">
+                        <div class="cate_title">목록 만들기</div>  <!--  팝업 뛰울거임  -->
+                        <div class="cate_content"><a href="#">글 만들기</a></div>
+                        <div class="cate_total">전체 리스트 보기</div>
+                        <div class="cate_box">
+                            <div class="cate_item">
+                                <div class="item_name">독서</div>
+                                <div class="item_mode">
+                                    <div class="cate_seqno" style="display: none;">7</div>  <!--  고유번호 같이 넣어주고 팝업누르면 넣어주기  -->
+                                    <div class="modify">수정</div>   <!-- 만들기랑 같은 팝업 뛰울거임  -->
+                                    <div class="delete">삭제</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cate_popup_pan">
+                            <div class="cate_popup"><!-- 만들기 누르면 title 비어있어야하고 , 수정 누르면 그내용 담아 와야함. -->
+                                <div class="popup_name">나상민</div> <!-- 나상민(사용자이름), 추가(수정) 클릭할때마다 다르게   -->
+                                <div class="popup_seqno" style="display: none;"></div> <!--  고유번호 받아와서 넣어주기  -->
+                                <input type="text" placeholder="목록의 이름을 정해주세요" class="popup_title" value="" >
+                                <div class="popup_buttonbox">
+                                    <div class="popup_button">만들기</div>  <!-- 만들기랑 수정하기 -->
+                                    <div class="popup_cancle">취소</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        <div class="content_title">전체 리스트 보기</div>
+                        <div class="content_box">
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+                            <div class="content_item">
+                                <div class="content_seqno" style="display: none;"></div>
+                                <div class="content_type">독서</div>
+                                <div class="content_name"><a href="">항상 발전하고 꿈꾸는 나에게</a></div>
+                                <div class="content_delete">삭제</div>
+                            </div>
+
+                        </div>
+                        <div class="content_page">
+                            <span><a href="#">[이전]</a></span>
+                            <span><a href="#">1</a></span>
+                            <span><a href="#">2</a></span>
+                            <span><a href="#">3</a></span>
+                            <span><a href="#">4</a></span>
+                            <span><a href="#">5</a></span>
+                            <span><a href="#">[다음]</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+
+        $(".cate_title").on('click',function(){
+        $('.cate_popup_pan').css({
+            display: "block"
+        })
+        $('.popup_title').val("")
+    })
+
+
+    $(".modify").on('click',function(){
+        $('.cate_popup_pan').css({
+            display: "block"
+        })
+        $('.popup_title').val($(this).parent().prev().text())
+        $('.popup_seqno').text($(this).prev().text())
+    })
+
+
+
+
+
+
+
+    })
+</script>
+
+</html>
