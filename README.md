@@ -93,13 +93,12 @@
 1.목록 만들기
   4번에 들어가는 목록 생성할 수 있는 팝업이 켜진다
 
-![image](https://github.com/user-attachments/assets/ffc2bcb1-3278-4564-83ed-0e2c606f94d8)
+<img width="745" alt="목록만들기" src="https://github.com/user-attachments/assets/24d51b9f-2270-4fce-bb4a-69a0b40e6117">
 
   
 2.글 만들기
   만들기 페이지
 
-![KakaoTalk_20240813_150213594](https://github.com/user-attachments/assets/88df9869-0b36-44f3-9837-9d9fa1f3a8aa)
  
  목록을 설정해야 글 작성이 가능하며, 목록 설정하지 않으면 alert로 "목록을 체크해주세요"라는 메세지가 뜬다
 
