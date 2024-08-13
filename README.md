@@ -112,8 +112,9 @@
 
 
 5. 수정
- 
-![image](https://github.com/user-attachments/assets/6f718550-c5b4-4068-9615-2447c1bafcfb)
+
+ <img width="758" alt="수정" src="https://github.com/user-attachments/assets/af5f56a3-0312-4410-9ef1-8a4b93b85331">
+
 
 
 6. 누른 목록 삭제
