@@ -73,10 +73,12 @@
 ## 📎이미지
 
 로그인 페이지
+
 ![KakaoTalk_20240813_150214096](https://github.com/user-attachments/assets/8dd9cfe4-c426-4c81-b1b4-b47a60433823)
 
 
 회원가입 페이지 & 기능
+
 ![KakaoTalk_20240813_150213594](https://github.com/user-attachments/assets/8651df48-ea3f-497e-a8df-4a9bc2f22520)
 
 ![KakaoTalk_20240813_150214639](https://github.com/user-attachments/assets/c4640afc-18dd-4ffd-a95e-83041afec673)
@@ -84,15 +86,20 @@
 
 
 메인 페이지 & 기능
+
 ![KakaoTalk_20240813_150231575](https://github.com/user-attachments/assets/e8880d54-5af8-43d4-b5c1-4fa9cbdbe9a0)
+
 1.목록 만들기
   4번에 들어가는 목록 생성할 수 있는 팝업이 켜진다
+
 ![image](https://github.com/user-attachments/assets/ffc2bcb1-3278-4564-83ed-0e2c606f94d8)
 
   
 2.글 만들기
   만들기 페이지
+
 ![KakaoTalk_20240813_150213594](https://github.com/user-attachments/assets/88df9869-0b36-44f3-9837-9d9fa1f3a8aa)
+ 
  목록을 설정해야 글 작성이 가능하며, 목록 설정하지 않으면 alert로 "목록을 체크해주세요"라는 메세지가 뜬다
 
 3.전체 리스트 보기
@@ -103,10 +110,12 @@
   목록이 박스 범위를 넘어가면 스크롤이 생긴다
 
 5. 수정
+ 
    ![image](https://github.com/user-attachments/assets/6f718550-c5b4-4068-9615-2447c1bafcfb)
 
 
 6. 누른 목록 삭제
+
 ![image](https://github.com/user-attachments/assets/990d12d8-f6d0-4fb8-8f40-00125266ea31)
 
 
