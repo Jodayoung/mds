@@ -81,6 +81,7 @@
 
 ![KakaoTalk_20240813_150213594](https://github.com/user-attachments/assets/8651df48-ea3f-497e-a8df-4a9bc2f22520)
 
+
 ![KakaoTalk_20240813_150214639](https://github.com/user-attachments/assets/c4640afc-18dd-4ffd-a95e-83041afec673)
 
 
@@ -105,13 +106,13 @@
 3.전체 리스트 보기
   모든 목록에 있는 글을 전체 다 불러와서 페이지네이션으로 10개씩/네비 갯수는 5개 보여준다
 
-
 4.목록 리스트
   목록이 박스 범위를 넘어가면 스크롤이 생긴다
 
+
 5. 수정
  
-   ![image](https://github.com/user-attachments/assets/6f718550-c5b4-4068-9615-2447c1bafcfb)
+![image](https://github.com/user-attachments/assets/6f718550-c5b4-4068-9615-2447c1bafcfb)
 
 
 6. 누른 목록 삭제
